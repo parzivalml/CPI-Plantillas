@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>Imagen</div>
+        <div>
+            <h1>SOLICITUD DE VACACIONES</h1>
+            <h2>GERENCIA DE PERSONAS</h2>
+            <h3>SubGerencia de personas</h3>
+        </div>
+    </div>
+    <div>
+        <div><p>No. Doc.</p></div>
+        <div>
+            <table>
+                <tr>
+                    <td>${FECHA_DAY}</td>
+                    <td>${FECHA_MES}</td>
+                    <td>${FECHA_YEAR}</td>
+                </tr>
+                <tr>
+                    <th>Día</th>
+                    <th>Mes</th>
+                    <th>Año</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p>CÓDIGO EMPRESA: <span>${CODIGO_EMPRESA}</span> <span>${EMPRESA}</span></p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div><h3>I. IDENTIFICACION DEL TRABAJO</h3></div>
+            <div>
+                <p>Fecha del contrato:</p>
+                <table>
+                    <tr>
+                        <td>${FECHA_CONTRATO_DAY}</td>
+                        <td>${FECHA_CONTRATO_MES}</td>
+                        <td>${FECHA_CONTRATO_YEAR}</td>
+                    </tr>
+                    <tr>
+                        <th>Día</th>
+                        <th>Mes</th>
+                        <th>Año</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>Rut del trabajador: <span>${RUT_TRABAJADOR}</span></p>
+            </div>
+            <div>
+                <p>Número de Personal: <span>${NUMERO_PERSONAL}</span></p>
+            </div>
+        </div>
+        <div>
+            <p>Nombre del Trabajador: <span>${NOMBRE_TRABAJADOR}</span></p>
+        </div>
+        <div>
+            <p>Unidad o Servicio: <span>${UNIDAD_SERVICIO}</span></p>
+        </div>
+    </div>
+    <div>
+        <div><h3>II. DETALLE DE LA SOLICITUD</h3></div>
+        <div><p>
+            Solicito autorización para hacer uso de mi Feriado Legal por reunir los requisitos establecidos conforme a la Ley. El Feriado Legal comprenderá desde el <span>${FECHA_INICIO}</span> hasta el <span>${FECHA_FIN}</span> ambas fechas inclusive, con un total de <span>${NUMERO_DIAS}</span> días.
+        </p></div>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <th>Detalle por Periodo</th>
+                <th>Total Días por Periodo</th>
+                <th>Días Utilizados por Periodo</th>
+            </thead>
+            <tbody>
+                <td>${FECHA_INICIO_PERIODO} - ${FECHA_FIN_PERIODO}</td>
+                <td>${TOTAL_DIAS_PERIODO}</td>
+                <td>${DIAS_USADOS_PERIODO}</td>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>Nota: Esta autorización puede ser modificada si las necesidades del buen servicio así lo requieren.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>Images</div>
+    <div><h1>FORMULARIO ÚNICO DE JUSTIFICACIÓN DE INASISTENCIAS</h1></div>
+    <div>
+        <div>
+            <p>GERENCIA DE PERSONAS - SUBGERENCIA DE PERSONAS</p>
+            <p>Número de Personal:<span> ${NUMERO_PERSONAL}</span></p>
+        </div>
+        <div>
+            <p>No. Doc. <span>${NUMERO_DOC}</span></p>
+            <p>Fecha: <span>${FECHA_SOLICITUD}</span></p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p>I. Codigo de sociedad: <span>${CODIGO_SOCIEDAD}</span><span>${SOCIEDAD}</span></p>
+        </div>
+    </div>
+    <div>
+        <div><p>II. Datos del trabajador</p></div>
+        <div>
+            <table>
+                <thead>
+                    <th>Tipo de Inasistencia</th>
+                    <th>Descripción Inasistencia</th>
+                    <th>RUT</th>
+                    <th>Apellidos</th>
+                    <th>Nombres</th>
+                </thead>
+                <tbody>
+                    <td>${TIPO_INASISTENCIA}</td>
+                    <td>${DESCRIPCION}</td>
+                    <td>${RUT}</td>
+                    <td>${APELLIDOS}</td>
+                    <td>${NOMBRES}</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div><p>III. Datos del evento solicitado</p></div>
+        <div>
+            <table>
+                <thead>
+                    <th></th>
+                    <th>Turno Original</th>
+                    <th>Permiso o inasistencia solicitada</th>
+                </thead>
+                <thead>
+                    <th>Evento</th>
+                    <th>Fecha</th>
+                    <th>Horario</th>
+                    <th>Fecha Desde</th>
+                    <th>Fecha Hasta</th>
+                    <th>Días</th>
+                    <th>Horas</th>
+                </thead>
+                <tbody>
+                    <td>${EVENTO}</td>
+                    <td>${FECHA_EVENTO}</td>
+                    <td>${HORARIO_EVENTO}</td>
+                    <td>${FECHA_DESDE}</td>
+                    <td>${FECHA_HASTA}</td>
+                    <td>${DIAS}</td>
+                    <td>${HORAS}</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div><p>IV. Nota del colaborador</p></div>
+        <div><p></p></div>
+    </div>
+</body>
+</html>
